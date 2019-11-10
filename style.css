@@ -1,0 +1,135 @@
+/* ------------------------------------------------NAVBAR------------------------------------------------ */
+
+.nav_bar{
+    margin: 0 auto;
+}
+
+header{
+    background: #2A2436;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    height: 60px;
+    padding-left: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-content: space-between;
+}
+
+nav li{
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+nav li:hover{
+    background-color: #FFB736;
+    transition: all .5s;
+}
+nav a:hover{
+    color: black;
+    transition: all .5s;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: "muli";
+}
+
+.contact{
+    background-color: #FFB736;
+}
+
+.bgimg {
+    width: 100%;
+}
+
+/* ------------------------------------------------MAIN------------------------------------------------ */
+body {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #47455b;
+    font-family: 'Muli';
+}
+
+.content-text {
+    color: white;
+}
+
+.header1 {
+    background-image: url("./sources/images/wallp.jpg");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    padding: 10%;
+}
+
+.header1_text {
+    color: white;
+    /* margin-right: 700px; */
+}
+
+#header1_heading {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 1%;
+}
+
+.hr1 {
+    margin-top: 0;
+    margin-bottom: 0%;
+    border: 5px solid #3992d0;
+    background-color: #55daff;
+    float: left;
+}
+
+.team-member {
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #2A2436;
+    height: 1500px;
+}
+
+#team-member {
+    text-align: center;
+    font-weight: 650;
+    float: center;
+}
+
+.hr2 {
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 5%;
+    border: 3px solid white;
+    float: center
+}
+
+/* CARD */
+
+.card {
+    background-color: #2a2634;
+}
