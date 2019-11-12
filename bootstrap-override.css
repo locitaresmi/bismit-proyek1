@@ -1,0 +1,22 @@
+.border {
+    border: 5px solid #feb836 !important; 
+}
+
+.rounded-circle {
+    height: 170px ;
+    width: 170px;
+}
+
+.card {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card-body {
+    padding-top: 10px !important;
+}
+
+.bg-dark{
+    background-color: #292533!important;
+}

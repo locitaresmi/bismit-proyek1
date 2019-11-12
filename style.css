@@ -83,7 +83,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
+    /* height: 500px; */
     padding: 10%;
 }
 
@@ -107,29 +107,104 @@ body {
 }
 
 .team-member {
-    padding-top: 60px;
+    padding-top: 90px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: #2A2436;
-    height: 1500px;
+    background-color: #47455b;
+    /* height: 1500px; */
+    background-size: auto;
 }
 
 #team-member {
     text-align: center;
     font-weight: 650;
-    float: center;
 }
 
 .hr2 {
     border: none;
     margin-top: 25px;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
     border: 3px solid white;
-    float: center
+
 }
 
 /* CARD */
 
 .card {
     background-color: #2a2634;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#nama{
+    margin-top: 0%;
+    color: #feb836;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+
+#jabatan{
+    margin-top: 0%;
+    color: white;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.garis-card{
+    margin-top: 5%;
+    border: 2px solid #feb836;
+    background-color: #feb836;
+    width: 200px;
+}
+
+/* SCROLL UP BUTTON */
+/* .back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+} */
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#button::after {
+    /* content: "\f077";
+    font-family: 'Muli';
+    font-weight: normal;
+    font-style: normal; */
+    /* font-size: 10em; */
+    line-height: 50px;
+    color: #fff;
+}
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#button:active {
+    background-color: #555;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
 }
