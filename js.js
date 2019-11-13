@@ -34,18 +34,32 @@
 //     });
 // });
 
-var btn = $('#button');
+// var btn = $('#button');
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-    } 
-    else {
-        btn.removeClass('show');
-    }
-});
+// $(window).scroll(function() {
+//     if ($(window).scrollTop() > 300) {
+//         btn.addClass('show');
+//     } 
+//     else {
+//         btn.removeClass('show');
+//     }
+// });
 
-btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-});
+// btn.on('click', function(e) {
+//     e.preventDefault();
+//     $('html, body').animate({scrollTop:0}, '300');
+// });
+
+// var btn = document.querySelector("#upBtn");
+// $(window).scroll(function() {
+//     if ($(window).scrollTop() > 300) {
+//         btn.addClass('show');
+//     } 
+//     else {
+//         btn.removeClass('show');
+//     }
+// });
+var btn = document.querySelector("#upBtn");
+btn.addEventListener("click",function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+})

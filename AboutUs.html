@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Title -->
     <title>About Us</title>
+    <link rel="icon" type="image/ico" href="./images/logoBisMitSmall.png" />
     <!-- File CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/98e0600324.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
     <!-- Bootstrap OVERRIDE CSS -->
@@ -31,7 +33,7 @@
             <nav>
                 <ul>
                     <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
+                    <li><a href='#' id="active">About</a></li>
                     <li><a href='#'>Projects</a></li>
                     <li><a href='#'>Gallery</a></li>
                     <li><a href='#'>BEM</a></li>
@@ -67,7 +69,7 @@
                     <div class="row">
 
                         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-4 mb-4">
-                            <div class="card bg-dark text-white " style="width: 24rem;">
+                            <div class="card bg-dark text-white " style="width: 22rem;">
                                 <img src="./images/portrait.jpg" class="card-img-top border rounded-circle img-fluid center" alt="...">
                                 <div class="card-body">
                                     <p id="nama">Lorem Ipsum</p>
@@ -79,7 +81,7 @@
                         </div>
                     
                         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-4 mb-4">
-                            <div class="card bg-dark text-white " style="width: 24rem;">
+                            <div class="card bg-dark text-white " style="width: 22rem;">
                                 <img src="./images/portrait.jpg" class="card-img-top border rounded-circle img-fluid center" alt="...">
                                 <div class="card-body">
                                     <p id="nama">Lorem Ipsum</p>
@@ -91,7 +93,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-4 mb-4">
-                            <div class="card bg-dark text-white " style="width: 24rem;">
+                            <div class="card bg-dark text-white " style="width: 22rem;">
                                 <img src="./images/portrait.jpg" class="card-img-top border rounded-circle img-fluid center" alt="...">
                                 <div class="card-body">
                                     <p id="nama">Lorem Ipsum</p>
@@ -107,7 +109,7 @@
                     <div class="row">
 
                         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-4 mb-4">
-                            <div class="card bg-dark text-white " style="width: 24rem;">
+                            <div class="card bg-dark text-white " style="width: 22rem;">
                                 <img src="./images/portrait.jpg" class="card-img-top border rounded-circle img-fluid center" alt="...">
                                 <div class="card-body">
                                     <p id="nama">Lorem Ipsum</p>
@@ -119,7 +121,7 @@
                         </div>
                         
                         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-4 mb-4">
-                            <div class="card bg-dark text-white " style="width: 24rem;">
+                            <div class="card bg-dark text-white " style="width: 22rem;">
                                 <img src="./images/portrait.jpg" class="card-img-top border rounded-circle img-fluid center" alt="...">
                                 <div class="card-body">
                                     <p id="nama">Lorem Ipsum</p>
@@ -131,7 +133,7 @@
                         </div>
     
                         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mt-4 mb-4">
-                            <div class="card bg-dark text-white " style="width: 24rem;">
+                            <div class="card bg-dark text-white " style="width: 22rem;">
                                 <img src="./images/portrait.jpg" class="card-img-top border rounded-circle img-fluid center" alt="...">
                                 <div class="card-body">
                                     <p id="nama">Lorem Ipsum</p>
@@ -143,30 +145,48 @@
                         </div>
 
                     </div>
+
+                        
+
                 </div>
             </div>
         </div>
+            <div class="upBtn">
+                <button id="upBtn" ><i class="fas fa-chevron-up fa-2x"></i></button>
+            </div>
     </div>
 
+    <!-- other sections -->
+    <section class="location">
+        <div class="locationElements container-fluid">
+            <div class="row">
+                <div class="google-maps locationElement col-12 col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.22750904618!2d106.82649991413908!3d-6.364595564031364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec1ad14fb6cf%3A0xc94e4d829420fa15!2sFaculty%20of%20Computer%20Science%2C%20University%20of%20Indonesia!5e0!3m2!1sen!2sid!4v1572840712779!5m2!1sen!2sid" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div id="locationLabel" class="locationElement col-12 col-md-6 m-0 p-0">
+                    <div class="headerlocation"><h3 id="locationTitle">LOCATION</h3></div>
+                    <div id="locationDesc" class="flex-column align-items-center d-flex justify-content-center">
+                        <img class="img-fluid" src="pin.png" alt="">
+                        <h4>Faculty of Computer Science</br>Universitas Indonesia</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        
+    </section>
 
 </body>
 
-<!-- <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a> -->
-
-<!-- <div id="btnTop" class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px; display: none;">
-    <a href="#topSection" class="btn-floating btn-large red">
-        <i class="fa fa-arrow-up"></i>
-    </a>
-</div> -->
-
-<a id="button">
+<!-- <a id="button">
     <i class="fa fa-arrow-up"></i>
-</a>
+</a> -->
 
 <!-- scripts -->
+<script src="js.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- JAVASCRIPT -->
-<script src="js.js"></script>
 </html>
