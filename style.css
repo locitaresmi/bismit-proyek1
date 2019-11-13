@@ -1,4 +1,4 @@
-/* ------------------------------------------------NAVBAR------------------------------------------------ */
+/* NAVBAR ---------------------------------------------------------------------------------------------------------- */
 
 .nav_bar{
     margin: 0 auto;
@@ -24,6 +24,14 @@ nav{
     display: flex;
     justify-content: flex-end;
     float: right;
+}
+
+.nav_bar #active{
+    color:#FFB736;
+}
+
+#active:hover{
+    color:#292533;
 }
 
 nav ul{
@@ -64,7 +72,9 @@ nav a{
     width: 100%;
 }
 
-/* ------------------------------------------------MAIN------------------------------------------------ */
+/* END OF NAVBAR ---------------------------------------------------------------------------------------------------- */
+
+/* MAIN ------------------------------------------------------------------------------------------------------------- */
 body {
     margin-top: 0%;
     margin-left: 0%;
@@ -113,6 +123,7 @@ body {
     background-color: #47455b;
     /* height: 1500px; */
     background-size: auto;
+    padding-bottom: 40px;
 }
 
 #team-member {
@@ -128,7 +139,7 @@ body {
 
 }
 
-/* CARD */
+/*CARD SECTION -------------------------------------------------------------------------------------------------------- */
 
 .card {
     background-color: #2a2634;
@@ -165,17 +176,11 @@ body {
 }
 
 /* SCROLL UP BUTTON */
-/* .back-to-top {
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display:none;
-} */
 
-#button {
+/* #upBtn {
     display: inline-block;
-    background-color: #FF9800;
+    color:rgb(77, 55, 18);
+    background:#FFB736;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -188,23 +193,108 @@ body {
     visibility: hidden;
     z-index: 1000;
 }
-#button::after {
+#upBtn::after {
     /* content: "\f077";
     font-family: 'Muli';
     font-weight: normal;
     font-style: normal; */
-    /* font-size: 10em; */
+    /* font-size: 10em;
     line-height: 50px;
     color: #fff;
 }
-#button:hover {
+#upBtn:hover {
     cursor: pointer;
     background-color: #333;
 }
-#button:active {
+#upBtn:active {
     background-color: #555;
 }
-#button.show {
+#upBtn.show {
     opacity: 1;
     visibility: visible;
+} */  
+
+/* .upBtn {
+    background-color: #47455b;
+    background-size: auto;
+} */
+
+.upBtn {
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
+
+#upBtn {
+    color:rgb(77, 55, 18);
+    background:#FFB736;
+    border:none;
+    outline:none;
+    float: right;
+}
+
+/* END OF CARD SECTION ----------------------------------------------------------------------------------------------- */
+
+/* location elements ------------------------------------------------------------------------------------------------- */
+.headerlocation{
+    display:flex;
+    justify-content: center;
+}
+
+.location {
+    position:relative;
+}
+
+.locationElement {
+    height:25em;
+}
+
+.google-maps {
+    position: relative;
+    /* This is the aspect ratio */
+    padding-bottom: 400px;
+    height: 0;
+    overflow:hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#locationTitle {
+    color: black;
+    text-shadow: 0px 4px 2.5px rgba(41, 37, 51,.2);
+    font-size: 2.3em;
+    font-weight: 900;
+    font-family: "rubik";
+    text-align:center;
+    margin-top:1.5em;
+    padding-bottom:15px;
+    border-bottom: 8px solid black;
+    width: 7.2em;
+}
+
+#locationLabel {
+    background: #FFB736;
+}
+
+#locationLabel img {
+    width:4em;
+}
+
+#locationDesc {
+    margin-top:3.6em;
+}
+
+#locationLabel h4 {
+    margin-top:.5em;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+
+/* end of location ---------------------------------------------------------------------------------------------------*/
