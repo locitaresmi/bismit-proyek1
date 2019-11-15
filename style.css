@@ -340,3 +340,18 @@ body {
 
 /* end of form ---------------------------------------------------------------------------------------------------*/
 
+/* GALLERY section ------------------------------------------------------------------------------------------------------*/
+
+.gallery {
+    padding: 70px;
+}
+
+.gallery h1 {
+    font-family: "Rubik";
+    font-weight: bolder;
+    text-align: center;
+}
+
+.gallery hr {
+    border: 3px solid black;
+}
