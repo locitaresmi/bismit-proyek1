@@ -322,23 +322,85 @@ body {
 /* end of location ---------------------------------------------------------------------------------------------------*/
 
 /* FORM section ------------------------------------------------------------------------------------------------------*/
-.form {
-    background-color: #292533;
-    background-size: auto;
-    padding: 50px;
+.reach-us {
+height: fit-content;
+background: #292533;
+padding: 2rem;
+padding-top: 5rem;
 }
 
-.form h1 {
-    color: white;
-    padding-bottom: 0px;
+.reach-us .reach-us-in {
+width: 50rem;
 }
 
-.form hr {
-    border: 3px solid white;
-
+.reach-us .reach-us-in .reach-us-title {
+margin-bottom: 1.5rem;
 }
 
+.reach-us .reach-us-in .reach-us-title h1 {
+font: bold 2.5rem "Rubik", sans-serif;
+color: #fff;
+border-bottom: 0.4rem solid #fff;
+}
+
+.reach-us .reach-us-in .reach-us-title img {
+margin: 0 1rem;
+}
+
+.reach-us .reach-us-in .reach-us-email {
+width: 100%;
+justify-content: space-between;
+margin-bottom: 1rem;
+}
+
+.reach-us .reach-us-in .reach-us-email input {
+height: 3rem;
+background: none;
+border: 1px solid #fff;
+width: 48.5%;
+padding: 0 1rem;
+color: #fff;
+font: bold 1.3rem "Muli";
+}
+
+.reach-us .reach-us-in .reach-us-email input::placeholder, .reach-us .reach-us-in .reach-us-email input:focus {
+color: #fff;
+font: bold 1.3rem "Muli";
+}
+
+.reach-us .reach-us-in textarea {
+width: 100%;
+background: none;
+padding: 1rem;
+border: 1px solid #fff;
+margin-bottom: 1rem;
+color: #fff;
+font: bold 1.3rem "Muli";
+}
+
+.reach-us .reach-us-in textarea::placeholder, .reach-us .reach-us-in textarea:focus {
+color: #fff;
+font: bold 1.3rem "Muli";
+}
+
+.reach-us .reach-us-in button {
+border-radius: 0;
+background: #463056;
+color: #fff;
+font: bold 1.3rem "Muli";
+padding: 0.5rem 4rem;
+align-self: flex-end;
+}
 /* end of form ---------------------------------------------------------------------------------------------------*/
+
+footer {
+height: fit-content;
+padding: 0.8rem;
+background: #000;
+font: bold 1rem "Muli";
+color: #fff;
+text-align: center;
+}
 
 /* GALLERY section ------------------------------------------------------------------------------------------------------*/
 
@@ -354,4 +416,31 @@ body {
 
 .gallery hr {
     border: 3px solid black;
+}
+
+/* -------------------- */
+
+@media (max-width: 576px) {
+.reach-us .reach-us-in {
+    width: 100%;
+    }
+    .reach-us .reach-us-in .reach-us-title h1 {
+    font-size: 1.5em;
+    border-bottom: 0.2rem solid #fff;
+    }
+    .reach-us .reach-us-in .reach-us-title img {
+    width: 3rem !important;
+    margin: 0 0.5rem !important;
+    }
+    .reach-us .reach-us-in .reach-us-email {
+    display: flex;
+    flex-direction: column;
+    }
+    .reach-us .reach-us-in .reach-us-email input {
+    width: 100%;
+    margin: 0.2rem 0;
+    }
+    .reach-us .reach-us-in textarea {
+    height: 12srem;
+    }
 }
