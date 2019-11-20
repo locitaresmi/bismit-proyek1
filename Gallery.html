@@ -25,21 +25,34 @@
 
 <body style="background-color: #f3e4e1;">
     <!-- Navbar Section -->
-    <div class="nav_bar">
-        <header>
-            <img src="./images/logo_bismit.png" alt="logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='./AboutUs.html'>About</a></li>
-                    <li><a href='#'>Projects</a></li>
-                    <li><a href='#' id="active">Gallery</a></li>
-                    <li><a href='#'>BEM</a></li>
-                    <li class="contact" ><a href='#'>Hire Us!</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+    <nav class="navbar navbar-expand-lg p-0">
+        <a class="navbar-brand pl-2" href="#"><img id="logo"src="./images/logo_bismit.png" alt=""></a>
+        <button id="burger" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse my-0" id="navbarNav">
+            <ul id="navElements"class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./AboutUs.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="active" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BEM</a>
+                </li>
+                <li id="hireUs"class="nav-item">
+                    <a class="nav-link" href="#">Hire Us!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!--Gallery Header-->
     <section class="gallery">
@@ -71,7 +84,7 @@
                     </div>
                 </div>
                 <!--slider-->
-                <div class="container1 col col-lg-4">
+                <div class="container1 col col-lg-4" id="scrollbar">
                     <div class="row justify-content-md-center">
                         <img href="#" class="gambar float-center" src="./images/img_nature.jpg" title="Nature"
                         alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
