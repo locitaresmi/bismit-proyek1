@@ -1,65 +1,21 @@
-// $(document).ready(function(){
-//     $(window).scroll(function () {
-//         if ($(this).scrollTop() > 50) {
-//             $('#back-to-top').fadeIn();
-//         } else {
-//             $('#back-to-top').fadeOut();
-//         }
-//     });
-//     // scroll body to 0px on click
-//     $('#back-to-top').click(function () {
-//         $('#back-to-top').tooltip('hide');
-//         $('body,html').animate({
-//             scrollTop: 0
-//         }, 800);
-//         return false;
-//     });
-    
-//     $('#back-to-top').tooltip('show');
-
-// });
-
-// $(function() {
-
-//     var $btn = $('#btnTop');
-//     var $home = $('#topSection');
-//     var startpoint = $home.scrollTop() + $home.height();
-
-//     $(window).on('scroll', function() {
-//         if($(window).scrollTop() > startpoint) {
-//             $btn.show();
-//         } else {
-//             $btn.hide();
-//         }
-//     });
-// });
-
-// var btn = $('#button');
-
-// $(window).scroll(function() {
-//     if ($(window).scrollTop() > 300) {
-//         btn.addClass('show');
-//     } 
-//     else {
-//         btn.removeClass('show');
-//     }
-// });
-
-// btn.on('click', function(e) {
-//     e.preventDefault();
-//     $('html, body').animate({scrollTop:0}, '300');
-// });
-
-// var btn = document.querySelector("#upBtn");
-// $(window).scroll(function() {
-//     if ($(window).scrollTop() > 300) {
-//         btn.addClass('show');
-//     } 
-//     else {
-//         btn.removeClass('show');
-//     }
-// });
 var btn = document.querySelector("#upBtn");
 btn.addEventListener("click",function(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
 })
+
+// GALLERY
+
+function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    var imgDesc = document.getElementById("tulisan")
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.title;
+    imgDesc.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+}

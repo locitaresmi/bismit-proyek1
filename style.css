@@ -82,6 +82,8 @@ body {
     margin-right: 0%;
     background-color: #47455b;
     font-family: 'Muli';
+    background-size: auto;
+    overflow-x: hidden;
 }
 
 .content-text {
@@ -196,50 +198,6 @@ body {
     width: 200px;
     margin-bottom: 7%;
 }
-
-/* SCROLL UP BUTTON */
-
-/* #upBtn {
-    display: inline-block;
-    color:rgb(77, 55, 18);
-    background:#FFB736;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s, opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-}
-#upBtn::after {
-    /* content: "\f077";
-    font-family: 'Muli';
-    font-weight: normal;
-    font-style: normal; */
-    /* font-size: 10em;
-    line-height: 50px;
-    color: #fff;
-}
-#upBtn:hover {
-    cursor: pointer;
-    background-color: #333;
-}
-#upBtn:active {
-    background-color: #555;
-}
-#upBtn.show {
-    opacity: 1;
-    visibility: visible;
-} */  
-
-/* .upBtn {
-    background-color: #47455b;
-    background-size: auto;
-} */
 
 .upBtn {
     overflow: hidden;
@@ -404,19 +362,67 @@ text-align: center;
 
 /* GALLERY section ------------------------------------------------------------------------------------------------------*/
 
-.gallery {
-    padding: 70px;
+.hr1{
+    margin-top: 0;
+    margin-bottom: 0%;
+    border: 3px solid #2A2436;
 }
 
-.gallery h1 {
-    font-family: "Rubik";
-    font-weight: bolder;
+#header2_heading {
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 0%;
+    color: #2A2436;
+}
+
+.header2_text{
+text-align: center;
+padding-top: 3%;
+}
+
+.empty{
+height: 50px;
+}
+
+.container1{
+height: 500px;
+width: 300px;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
+.gambar{
+height: 120px;
+padding: 5px;
+padding-right: 0;
+}
+
+#tulisan{
     text-align: center;
+    padding: 50px;
+    padding-top: 20px;
 }
 
-.gallery hr {
-    border: 3px solid black;
+.imgtext{
+background-color: #2A2436;
+color: white;
+height: auto;
+width: 80%;
 }
+
+#imgtext{
+text-align: center;
+padding-top: 30px;
+}
+
+.empty3{
+height: 25px;
+}
+
+.empty2{
+height: 50px;
+}
+
 
 /* -------------------- */
 
