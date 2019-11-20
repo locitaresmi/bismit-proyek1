@@ -375,20 +375,20 @@ overflow-y: scroll;
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
-	background-color: #F5F5F5;
+	background-color: rgb(126, 125, 125);
 }
 
 #scrollbar::-webkit-scrollbar
 {
 	width: 12px;
-	background-color: #F5F5F5;
+	background-color: rgba(126, 125, 125, 0);
 }
 
 #scrollbar::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
+	background-color: rgb(36, 36, 36);
 }
 
 /* end of scrollbar */
